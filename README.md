@@ -1,5 +1,9 @@
 # Docker image for SAP HANA, express edition (unofficial)
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/ingomuellernet/hana-express.svg)](https://hub.docker.com/r/ingomuellernet/hana-express/)
+[![Automated Build](https://img.shields.io/docker/automated/ingomuellernet/hana-express.svg)](https://hub.docker.com/r/ingomuellernet/hana-express/)
+[![](https://images.microbadger.com/badges/image/ingomuellernet/hana-express.svg)](https://microbadger.com/images/ingomuellernet/hana-express)
+
 This image is designed as starting point to easily create an docker image for SAP HANA, express edition. In comes with all prerequisites and some infrastructure to run dockerized SAP HANA, express edition, but not SAP HANA itself. It is intended for quick development on top of SAP HANA only -- not for production!
 
 ## Prequisites
