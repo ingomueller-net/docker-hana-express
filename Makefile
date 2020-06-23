@@ -1,4 +1,4 @@
-INSTALLER_IMAGE=ingomueller.net/hana-express
+INSTALLER_IMAGE=ingomuellernet/hana-express
 TEMP_CONTAINER=hana-express-installer
 FINAL_IMAGE=hana-express
 
