@@ -16,7 +16,7 @@ This image is designed as starting point to easily create an docker image for SA
 
 1. Clone the [git repository of this docker image](https://github.com/ingomueller-net/docker-hana-express).
 
-2. Download SAP HANA express edition using the download from [the official website](https://www.sap.com/developer/topics/sap-hana-express.html). Place the downloaded file `hxe.tgz` into the `download` folder of the git repository.
+2. Download SAP HANA express edition. This is currently done with a download you can obtain [from here](https://www.sap.com/cmp/td/sap-hana-express-edition.html). You'll need the file `hxe.tgz`, which you get by selecting `Binary Installer` as `Image` and then `Server only installer` in the list of compenents. Place the downloaded file `hxe.tgz` into the `download` folder of the git repository.
 
 3. Create a new docker image with SAP HANA, express edition inside:
 
@@ -50,3 +50,9 @@ This image is designed as starting point to easily create an docker image for SA
   * Instance number: 90
   * Master password: HanaExpress1
   * Hostname: (some hash provided by docker)
+
+## Upgrading to new versions
+
+This is an attempt to document ways to trouble-shoot problems when porting this approach to new version of HANA express or OpenSUSE.
+
+* If the installer fails, run `hdbinst` (currently in `HANA_EXPRESS_20/DATA_UNITS/HDB_SERVER_LINUX_X86_64` after downloading and extracting the installer) directly. When it fails, a path to a log file is printed, which may contain useful information.
