@@ -6,6 +6,14 @@
 
 This image is designed as starting point to easily create an docker image for SAP HANA, express edition. In comes with all prerequisites and some infrastructure to run dockerized SAP HANA, express edition, but not SAP HANA itself. It is intended for quick development on top of SAP HANA only -- not for production!
 
+## Tested Versions
+
+The following versions of SAP HANA, express edition have been reported to work with the corresponding versions of this repository. If your version is not in the list, but works, please create a PR to add it.
+
+| SAP HANA, express edition | ingomuellernet/hana-express |
+|---------------------------|-----------------------------|
+| 2.00.045                  | hana-2.00.045               |
+
 ## Prequisites
 
 * docker
