@@ -1,4 +1,4 @@
-FROM opensuse:leap
+FROM opensuse/leap:15.1
 MAINTAINER Ingo Müller <ingo.mueller@inf.ethz.ch>
 ENV container docker
 
@@ -6,12 +6,22 @@ ENV container docker
 RUN zypper -n ref && \
     zypper -n up --skip-interactive --no-recommends && \
     zypper -n install -l --no-recommends \
+        curl \
         hostname \
+        insserv-compat \
+        libatomic1 \
+        libaio \
+        libgcc_s1 \
         libltdl7 \
+        libstdc++6 \
         ncurses-utils \
         numactl \
         python-pyOpenSSL \
-        sudo && \
+        unzip \
+        sudo \
+        which \
+        zip \
+        && \
     zypper clean && \
     rm -rf /var/cache/zypp/*
 
