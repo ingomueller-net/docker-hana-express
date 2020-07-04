@@ -14,12 +14,15 @@ RUN zypper -n ref && \
         libgcc_s1 \
         libltdl7 \
         libstdc++6 \
+        libXft2 \
+        libXss1 \
         ncurses-utils \
         numactl \
         python-pyOpenSSL \
         unzip \
         sudo \
         which \
+        xorg-x11-fonts-core \
         zip \
         && \
     zypper clean && \
