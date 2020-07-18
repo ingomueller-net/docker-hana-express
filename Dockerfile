@@ -7,6 +7,7 @@ RUN zypper -n ref && \
     zypper -n up --skip-interactive --no-recommends && \
     zypper -n install -l --no-recommends \
         curl \
+        gdb \
         hostname \
         insserv-compat \
         libatomic1 \
