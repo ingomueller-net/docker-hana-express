@@ -12,7 +12,7 @@ The following versions of SAP HANA, express edition have been reported to work w
 
 | SAP HANA, express edition | ingomuellernet/hana-express |
 |---------------------------|-----------------------------|
-| 2.00.045                  | hana-2.00.045               |
+| 2.00.045                  | [`:hana-2.00.045`](https://hub.docker.com/repository/docker/ingomuellernet/hana-express/tags) |
 
 ## Prequisites
 
